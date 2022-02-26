@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.usersView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.usersView)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // usersView
+            // 
+            this.usersView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.usersView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.usersView.Location = new System.Drawing.Point(12, 12);
+            this.usersView.Name = "usersView";
+            this.usersView.Size = new System.Drawing.Size(554, 342);
+            this.usersView.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(578, 360);
+            this.Controls.Add(this.usersView);
+            this.Name = "Form1";
+            this.Text = "Replace";
+            ((System.ComponentModel.ISupportInitialize)(this.usersView)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView usersView;
     }
 }
 
